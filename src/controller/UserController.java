@@ -1,9 +1,14 @@
 package controller;
 
+import bean.Customer;
 import bean.User;
 
 public class UserController {
-    public User query (User user) {
-        return user;
+    public String query (User user) {
+        return user.getUserName();
+    }
+
+    public Customer queryOne (Customer customer) {
+        return customer;
     }
 }
